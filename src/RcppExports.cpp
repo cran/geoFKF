@@ -6,6 +6,11 @@
 
 using namespace Rcpp;
 
+#ifdef RCPP_USE_GLOBAL_ROSTREAM
+Rcpp::Rostream<true>&  Rcpp::Rcout = Rcpp::Rcpp_cout_get();
+Rcpp::Rostream<false>& Rcpp::Rcerr = Rcpp::Rcpp_cerr_get();
+#endif
+
 // logLikMultiNorm
 arma::colvec logLikMultiNorm(const arma::mat& mCoef, const arma::mat& mDist, double s2, double phi, double p);
 RcppExport SEXP _geoFKF_logLikMultiNorm(SEXP mCoefSEXP, SEXP mDistSEXP, SEXP s2SEXP, SEXP phiSEXP, SEXP pSEXP) {

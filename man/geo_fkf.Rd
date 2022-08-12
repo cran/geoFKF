@@ -16,7 +16,7 @@ are latitude and longitude}
 
 \item{p}{order in the Fourier Polynomial}
 
-\item{t}{a time series with values belonging to \eqn{[\-pi, \pi]} to
+\item{t}{a time series with values belonging to \eqn{[-\pi, \pi]} to
 evaluate the estimate curve}
 }
 \value{

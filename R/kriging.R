@@ -60,7 +60,7 @@ log_lik_rf <- function(m_coef, m_coord) {
 #' @param new_loc a tible with one observation, where the columns or variables
 #' are latitude and longitude
 #' @param p order in the Fourier Polynomial
-#' @param t a time series with values belonging to \eqn{[\-pi, \pi]} to
+#' @param t a time series with values belonging to \eqn{[-\pi, \pi]} to
 #' evaluate the estimate curve
 #' @export
 #'
